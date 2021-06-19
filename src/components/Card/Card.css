@@ -1,0 +1,29 @@
+.card-container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 50%;
+  margin: .25rem;
+}
+.header {
+  border: 1px solid blue;
+  background-color: green;
+  color: white;
+}
+label {
+  display: block;
+}
+span {
+  font-weight: bold;  
+  padding-right: 0.5rem;
+}
+/*
+.fs-row-item > span.unchecked {
+  color: #F00;
+}
+.fs-row-item > span.checked {
+  color: #008000;
+}
+*/

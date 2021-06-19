@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import CardSearch from './components/CardSearch/CardSearch';
 
 function App() {
-  return (
+  return (    
+    <div>
+      <CardSearch />
+    </div>
+
+    /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +25,7 @@ function App() {
         </a>
       </header>
     </div>
+    */
   );
 }
 
