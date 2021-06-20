@@ -4,8 +4,13 @@ import CardSearch from './components/CardSearch/CardSearch';
 
 function App() {
   return (    
-    <div>
-      <CardSearch />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <div>
+          <CardSearch />
+        </div>
+      </header>
     </div>
 
     /*
