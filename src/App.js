@@ -11,9 +11,6 @@ function App() {
       <div className="App-content">
         <CardContent />
       </div>
-      <footer className="Appfooter-">
-        <img src={logo} className="App-logo" alt="logo" />
-      </footer>
     </div>
   );
 }

@@ -1,39 +1,37 @@
-.content-container {  
-  flex-grow: 1;
-  width: 25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-}
 .search-container {
-  padding: 0;
-  margin: .5rem;
+  width: 25rem;
+  margin: .5rem .5rem 0 .5rem;   
   display: inline-flex;  
-  /*display: flex;
-  flex-direction: rows;
-  justify-content: space-between;
-  align-items: center;*/
-  border: 1px solid red;
+
 	text-align: center;
 }
 .search-container > label { 
-  width: 5rem;
+  width: 4.5rem;
   margin: 0.2rem;
 }
-
-.search-container > button { 
-  flex: 1;
-  padding: .25rem;
-}
-
 .search-container > div {
   flex: 1;
-  margin: 0.2rem 0 0.2rem 0.2rem;
-  border: 1px solid red; 
+  margin: 0.2rem 0.5rem 0.2rem 0.2rem;
 }
+/*.search-container > button { */
+.ask-ten-more {
+  display: block;
+  font-weight: bold; 
+  position: relative;/*For the 100% to work on height and width*/
+  height: 100%;/*Takes all available height*/
+  width: 100%;/*Takes all available width*/
+  /*border: none; /*Get rid of default border in all browsers*/
+  /*outline: none; /*Get rid of webkit and IE borders*/
+
+/*
+  display: block;
+  width: 100%;
+  padding: .25rem;
+*/
+}
+
 .search-container > label:first-child {
-  margin: 0.2rem 0.2rem 0.2rem 0;
+  margin-left: 0.5rem;
 }
 
 /*

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import { SearchContext }  from "../CardContent/CardContent";
+import { SearchContext } from "../CardContent/CardContent";
 import { v4 as uuidv4 } from "uuid";
 import Card from "../Card/Card";
 import "./CardList.css";
 
 const CardList = () => {
   const [cards, setCards] = useState({ results: [] });
-  const {newLevel} = useContext(SearchContext);
+  const { newLevel } = useContext(SearchContext);
 
   /* Aleatoriza un array según el algoritmo de Fisher-Yates */
   function shuffle(array) {
@@ -18,7 +18,9 @@ const CardList = () => {
   }
 
   const loadCards = async () => {
-    const response = await fetch(`https://opentdb.com/api.php?amount=10&type=multiple&difficulty=${newLevel}`);
+    const response = await fetch(
+      `https://opentdb.com/api.php?amount=10&type=multiple&difficulty=${newLevel}`
+    );
     const data = await response.json();
     data.results.map((item) => {
       item.answers = [{ answer: item.correct_answer, correct: true }];
@@ -35,14 +37,8 @@ const CardList = () => {
 
   useEffect(() => {
     loadCards();
-    return () => {
-      console.log("limpiando");
-    };
   }, [newLevel]);
 
-  if (cards === null) {
-    return <></>;
-  }
   return (
     <div className="cards-container">
       <ul>
