@@ -13,32 +13,13 @@
   flex: 1;
   margin: 0.2rem 0.5rem 0.2rem 0.2rem;
 }
-/*.search-container > button { */
 .ask-ten-more {
   display: block;
   font-weight: bold; 
-  position: relative;/*For the 100% to work on height and width*/
-  height: 100%;/*Takes all available height*/
-  width: 100%;/*Takes all available width*/
-  /*border: none; /*Get rid of default border in all browsers*/
-  /*outline: none; /*Get rid of webkit and IE borders*/
-
-/*
-  display: block;
+  position: relative;
+  height: 100%;
   width: 100%;
-  padding: .25rem;
-*/
 }
-
 .search-container > label:first-child {
   margin-left: 0.5rem;
 }
-
-/*
-input[type="radio"]:checked + label { 
-  background:#f9d5e5;
-}
-input[type="radio"]:hover + label { 
-  background: #ffeead;
-}
-*/
