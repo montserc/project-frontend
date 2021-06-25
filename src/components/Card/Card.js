@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 import "./Card.css";
 
 const Card = (props) => {
@@ -15,7 +16,7 @@ const Card = (props) => {
     <form onSubmit={handleSubmit}>
       <div>{props.card.category}</div>
       <div dangerouslySetInnerHTML={{ __html: `${props.card.question}`}}></div>
-      <div>
+      <fieldset disabled={ resolve ? "disabled" : ""} >
         {props.card.answers.map((item) => (
           <label>
             <input type="radio" name="answers" />
@@ -25,7 +26,7 @@ const Card = (props) => {
             </span>
           </label>
         ))}
-      </div>
+      </fieldset>      
       <button type="submit">CHECK ANSWER</button>
     </form>
   );

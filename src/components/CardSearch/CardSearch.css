@@ -1,5 +1,46 @@
-.cards-container {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.content-container {  
+  flex-grow: 1;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
+.search-container {
+  padding: 0;
+  margin: .5rem;
+  display: inline-flex;  
+  /*display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+  align-items: center;*/
+  border: 1px solid red;
+	text-align: center;
+}
+.search-container > label { 
+  width: 5rem;
+  margin: 0.2rem;
+}
+
+.search-container > button { 
+  flex: 1;
+  padding: .25rem;
+}
+
+.search-container > div {
+  flex: 1;
+  margin: 0.2rem 0 0.2rem 0.2rem;
+  border: 1px solid red; 
+}
+.search-container > label:first-child {
+  margin: 0.2rem 0.2rem 0.2rem 0;
+}
+
+/*
+input[type="radio"]:checked + label { 
+  background:#f9d5e5;
+}
+input[type="radio"]:hover + label { 
+  background: #ffeead;
+}
+*/

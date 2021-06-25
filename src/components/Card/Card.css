@@ -1,8 +1,7 @@
 form {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
   background-color: rgb(255, 255, 255);
-  width: 25rem;
-  border: 2px solid #56be8e;
+  border: 4px solid #56be8e;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -11,11 +10,6 @@ form {
 }
 form > div {
   margin: .5rem .5rem 0 .5rem; 
-/*  border: 1px solid blue;*/
-}
-form > button {
-  margin: .5rem; 
-  padding: 0.25rem;
 }
 form > div:first-child {
   margin: 0;
@@ -25,6 +19,15 @@ form > div:first-child {
   font-size: 1.2rem;
   text-align: center;
 }
+form > fieldset {
+  margin: .5rem .5rem 0 .5rem; 
+  padding: 0;
+  border: 0;
+}
+form > button {
+  margin: .5rem; 
+  padding: .25rem;
+}
 label {
   display: flex;
   border: 1px solid #424242;
@@ -32,36 +35,33 @@ label {
   border-radius: 0.4rem;
   cursor: pointer;
 }
+label:last-child {
+  margin: 0;
+}
 label > div {
   flex: 1;
   padding: .25rem;
+  border-radius: 0.4rem;
 }
 label > span {
   float: right;
   font-weight: bold;
   padding: .25rem;
+  border-radius: 0 .4rem .4rem 0;
 }
 input[type="radio"] {  
   display: none;
 }
-
-input[type="radio"]:checked ~ div { 
+input[type="radio"]:checked ~ div {   
   background:#f9d5e5;
-  border-radius: .4rem 0 0 .4rem;
+  border-radius: .4rem;
 }
-
 input[type="radio"]:hover ~ div { 
-  background: #ffeead;
-  border-radius: .4rem 0 0 .4rem;
+  background: #ffeead;   
 }
-
 input[type="radio"]:checked ~ span { 
   background:#f9d5e5;
-  border-radius: 0 .4rem .4rem 0;
 }
-
 input[type="radio"]:hover ~ span { 
   background: #ffeead;
-  border-radius: 0 .4rem .4rem 0;
 }
-
