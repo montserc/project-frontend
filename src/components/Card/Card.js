@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
 import "./Card.css";
 
 const Card = (props) => {
   const [resolve, setResolve] = useState(false);
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
     setResolve(true);
   }
 

@@ -6,7 +6,7 @@ import "./CardList.css";
 
 const CardList = () => {
   const [cards, setCards] = useState({ results: [] });
-  const { newLevel } = useContext(SearchContext);
+  const { newLevel, toggle } = useContext(SearchContext);
 
   /* Aleatoriza un array según el algoritmo de Fisher-Yates */
   function shuffle(array) {
@@ -37,7 +37,7 @@ const CardList = () => {
 
   useEffect(() => {
     loadCards();
-  }, [newLevel]);
+  }, [newLevel, toggle]);
 
   return (
     <div className="cards-container">
